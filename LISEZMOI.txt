@@ -1,0 +1,20 @@
+JEU TÉLÉPHONE — version installable
+
+Contenu : index.html (le jeu), manifest.webmanifest et sw.js (installation et mode hors connexion),
+icon-192.png, icon-512.png, apple-touch-icon.png (icônes).
+
+1. Mettre le dossier en ligne (il faut une adresse en https)
+   - GitHub Pages : crée un dépôt, envoie-y tous ces fichiers à la racine, puis
+     Settings > Pages > Deploy from a branch > main / (root).
+   - ou Netlify : glisse le dossier sur https://app.netlify.com/drop (compte gratuit
+     nécessaire pour garder le site en ligne).
+
+2. Sur le téléphone (Android) : ouvre l'adresse dans Chrome, puis menu ⋮ >
+   « Installer l'application » (ou « Ajouter à l'écran d'accueil »).
+   Sur iPhone : Safari > Partager > « Sur l'écran d'accueil ».
+
+3. Lance le jeu depuis l'icône : il s'ouvre en plein écran et marche aussi hors connexion
+   une fois ouvert une première fois.
+
+Pour publier une nouvelle version, change le nom du cache dans sw.js
+(par exemple jeu-telephone-v2) en même temps que index.html.
